@@ -9,15 +9,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
+   @State var inputText: String = ""
+   @State var outputText: String = ""
+   
+   var body: some View {
+      VStack {
+         Text("Advent of Code 2019")
+            .font(.title)
+         TextField("Paste input here", text: $inputText)
+         
+         HStack {
+            Text("Day 1:")
+            Button(action: {
+               
+            }) {
+               Text("1")
+            }
+         }
+
+         Text("Output")
+         Text(outputText)
+      }
+   }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+   static var previews: some View {
+      ContentView()
+   }
 }
