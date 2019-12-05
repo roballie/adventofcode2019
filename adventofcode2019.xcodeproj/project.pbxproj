@@ -13,6 +13,7 @@
 		5043F8582399C82100BFFB33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8572399C82100BFFB33 /* Preview Assets.xcassets */; };
 		5043F85B2399C82100BFFB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8592399C82100BFFB33 /* Main.storyboard */; };
 		5043F8672399C82100BFFB33 /* adventofcode2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8662399C82100BFFB33 /* adventofcode2019Tests.swift */; };
+		5043F8722399CCC800BFFB33 /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8712399CCC800BFFB33 /* InputParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		5043F8622399C82100BFFB33 /* adventofcode2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adventofcode2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5043F8662399C82100BFFB33 /* adventofcode2019Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adventofcode2019Tests.swift; sourceTree = "<group>"; };
 		5043F8682399C82100BFFB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5043F8712399CCC800BFFB33 /* InputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				5043F8502399C82000BFFB33 /* AppDelegate.swift */,
 				5043F8522399C82000BFFB33 /* ContentView.swift */,
+				5043F8712399CCC800BFFB33 /* InputParser.swift */,
 				5043F8542399C82100BFFB33 /* Assets.xcassets */,
 				5043F8592399C82100BFFB33 /* Main.storyboard */,
 				5043F85C2399C82100BFFB33 /* Info.plist */,
@@ -209,6 +212,7 @@
 			files = (
 				5043F8532399C82000BFFB33 /* ContentView.swift in Sources */,
 				5043F8512399C82000BFFB33 /* AppDelegate.swift in Sources */,
+				5043F8722399CCC800BFFB33 /* InputParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
