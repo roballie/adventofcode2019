@@ -16,12 +16,14 @@ struct ContentView: View {
       VStack {
          Text("Advent of Code 2019")
             .font(.title)
-         TextField("Paste input here", text: $inputText)
+         ScrollView {
+            TextField("Paste input here", text: $inputText)
+         }
          
          HStack {
             Text("Day 1:")
             Button(action: {
-               
+               let inputArray = InputParser.autoParse(string: self.inputText)
             }) {
                Text("1")
             }
@@ -30,6 +32,7 @@ struct ContentView: View {
          Text("Output")
          Text(outputText)
       }
+      .frame(width: 500.0)
    }
 }
 
