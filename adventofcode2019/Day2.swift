@@ -9,5 +9,8 @@
 import Cocoa
 
 class Day2: DayParent {
-
+   
+   func part1GravityAssit() -> [Int] {
+      return []
+   }
 }

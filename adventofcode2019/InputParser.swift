@@ -24,4 +24,15 @@ class InputParser {
       return parsedArray.compactMap({ Int(String($0)) })
    }
    
+   class func unparseToCSV(intArray: [Int]) -> String {
+      var unparsedCSV = ""
+      
+      intArray.forEach({ unparsedCSV += "\($0)," })
+      if !unparsedCSV.isEmpty {
+         unparsedCSV.removeLast()
+      }
+      
+      return unparsedCSV
+   }
+   
 }

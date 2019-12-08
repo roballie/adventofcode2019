@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		503F2470239D6814006548E8 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F246F239D6814006548E8 /* Day2.swift */; };
 		503F2472239D6D78006548E8 /* DayParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F2471239D6D78006548E8 /* DayParent.swift */; };
+		503F2474239D6FBF006548E8 /* Day2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F2473239D6FBF006548E8 /* Day2Tests.swift */; };
 		5043F8512399C82000BFFB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8502399C82000BFFB33 /* AppDelegate.swift */; };
 		5043F8532399C82000BFFB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8522399C82000BFFB33 /* ContentView.swift */; };
 		5043F8552399C82100BFFB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8542399C82100BFFB33 /* Assets.xcassets */; };
 		5043F8582399C82100BFFB33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8572399C82100BFFB33 /* Preview Assets.xcassets */; };
 		5043F85B2399C82100BFFB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8592399C82100BFFB33 /* Main.storyboard */; };
-		5043F8672399C82100BFFB33 /* adventofcode2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8662399C82100BFFB33 /* adventofcode2019Tests.swift */; };
 		5043F8722399CCC800BFFB33 /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8712399CCC800BFFB33 /* InputParser.swift */; };
 		5043F8742399D28300BFFB33 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8732399D28300BFFB33 /* Day1.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +32,7 @@
 /* Begin PBXFileReference section */
 		503F246F239D6814006548E8 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		503F2471239D6D78006548E8 /* DayParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayParent.swift; sourceTree = "<group>"; };
+		503F2473239D6FBF006548E8 /* Day2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2Tests.swift; sourceTree = "<group>"; };
 		5043F84D2399C81F00BFFB33 /* adventofcode2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adventofcode2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5043F8502399C82000BFFB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5043F8522399C82000BFFB33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		5043F85C2399C82100BFFB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5043F85D2399C82100BFFB33 /* adventofcode2019.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = adventofcode2019.entitlements; sourceTree = "<group>"; };
 		5043F8622399C82100BFFB33 /* adventofcode2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adventofcode2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5043F8662399C82100BFFB33 /* adventofcode2019Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adventofcode2019Tests.swift; sourceTree = "<group>"; };
 		5043F8682399C82100BFFB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5043F8712399CCC800BFFB33 /* InputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParser.swift; sourceTree = "<group>"; };
 		5043F8732399D28300BFFB33 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 		5043F8652399C82100BFFB33 /* adventofcode2019Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5043F8662399C82100BFFB33 /* adventofcode2019Tests.swift */,
 				5043F8682399C82100BFFB33 /* Info.plist */,
+				503F2473239D6FBF006548E8 /* Day2Tests.swift */,
 			);
 			path = adventofcode2019Tests;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5043F8672399C82100BFFB33 /* adventofcode2019Tests.swift in Sources */,
+				503F2474239D6FBF006548E8 /* Day2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
