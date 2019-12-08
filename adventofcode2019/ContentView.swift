@@ -29,6 +29,13 @@ struct ContentView: View {
             }) {
                Text("1")
             }
+            Button(action: {
+               let inputArray = InputParser.autoParse(string: self.inputText)
+               let day1 = Day1(dataArray: inputArray)
+               self.outputText = "\(day1.fullFuelRequirementAdjustedForFuelMass())"
+            }) {
+               Text("2")
+            }
          }
 
          Text("Output")

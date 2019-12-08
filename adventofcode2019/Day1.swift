@@ -20,10 +20,29 @@ class Day1 {
       let fuelRequirement = fuelArray.reduce(0, +)
       return fuelRequirement
    }
+   
+   func fullFuelRequirementAdjustedForFuelMass() -> Int {
+      let fuelArray: [Int] = data.map({ $0.fuelRequirementAdjustedForFuelMass() })
+      let fuelRequirement = fuelArray.reduce(0, +)
+      return fuelRequirement
+   }
 }
 
 private extension Int {
    func fuelRequirement() -> Int {
       return (self / 3) - 2
+   }
+   
+   func fuelRequirementAdjustedForFuelMass() -> Int {
+      let requiredFuel = self.fuelRequirement()
+      var totalRequiredFuel = requiredFuel
+      
+      var additionalFuel = requiredFuel.fuelRequirement()
+      while additionalFuel >= 0 {
+         totalRequiredFuel += additionalFuel
+         additionalFuel = additionalFuel.fuelRequirement()
+      }
+      
+      return totalRequiredFuel
    }
 }
