@@ -14,6 +14,8 @@ class InputParser {
       var parsedArray: [String.SubSequence] = []
       if string.contains("\n") {
          parsedArray = string.split(separator: "\n")
+      } else if let intVal = Int(string) {
+         return [intVal]
       }
       
       return parsedArray.compactMap({ Int(String($0)) })
