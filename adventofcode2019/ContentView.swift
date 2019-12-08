@@ -37,7 +37,25 @@ struct ContentView: View {
                Text("2")
             }
          }
-
+         
+         HStack {
+            Text("Day 2:")
+            Button(action: {
+               let inputArray = InputParser.autoParse(string: self.inputText)
+               let day2 = Day2(dataArray: inputArray)
+               let unparsed = InputParser.unparseToCSV(intArray: day2.part1CorrectedGravityAssist())
+               self.outputText = unparsed
+            }) {
+               Text("1")
+            }
+//            Button(action: {
+//               let inputArray = InputParser.autoParse(string: self.inputText)
+//               let day2 = Day2(dataArray: inputArray)
+//            }) {
+//               Text("2")
+//            }
+         }
+         
          Text("Output")
          Text(outputText)
       }
