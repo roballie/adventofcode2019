@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		503F2470239D6814006548E8 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F246F239D6814006548E8 /* Day2.swift */; };
+		503F2472239D6D78006548E8 /* DayParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F2471239D6D78006548E8 /* DayParent.swift */; };
 		5043F8512399C82000BFFB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8502399C82000BFFB33 /* AppDelegate.swift */; };
 		5043F8532399C82000BFFB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8522399C82000BFFB33 /* ContentView.swift */; };
 		5043F8552399C82100BFFB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8542399C82100BFFB33 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		503F246F239D6814006548E8 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		503F2471239D6D78006548E8 /* DayParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayParent.swift; sourceTree = "<group>"; };
 		5043F84D2399C81F00BFFB33 /* adventofcode2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adventofcode2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5043F8502399C82000BFFB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5043F8522399C82000BFFB33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				5043F8502399C82000BFFB33 /* AppDelegate.swift */,
 				5043F8522399C82000BFFB33 /* ContentView.swift */,
 				5043F8712399CCC800BFFB33 /* InputParser.swift */,
+				503F2471239D6D78006548E8 /* DayParent.swift */,
 				5043F8732399D28300BFFB33 /* Day1.swift */,
 				503F246F239D6814006548E8 /* Day2.swift */,
 				5043F8542399C82100BFFB33 /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 			files = (
 				5043F8742399D28300BFFB33 /* Day1.swift in Sources */,
 				503F2470239D6814006548E8 /* Day2.swift in Sources */,
+				503F2472239D6D78006548E8 /* DayParent.swift in Sources */,
 				5043F8532399C82000BFFB33 /* ContentView.swift in Sources */,
 				5043F8512399C82000BFFB33 /* AppDelegate.swift in Sources */,
 				5043F8722399CCC800BFFB33 /* InputParser.swift in Sources */,

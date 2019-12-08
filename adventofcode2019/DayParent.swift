@@ -1,5 +1,5 @@
 //
-//  Day2.swift
+//  DayParent.swift
 //  adventofcode2019
 //
 //  Created by Rob Allie on 12/8/19.
@@ -8,6 +8,10 @@
 
 import Cocoa
 
-class Day2: DayParent {
-
+class DayParent {
+   internal let data: [Int]
+   
+   init(dataArray: [Int]) {
+      data = dataArray
+   }
 }

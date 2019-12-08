@@ -8,12 +8,7 @@
 
 import Cocoa
 
-class Day1 {
-   private let data: [Int]
-   
-   init(dataArray: [Int]) {
-      data = dataArray
-   }
+class Day1: DayParent {
    
    func fullFuelRequirement() -> Int {
       let fuelArray: [Int] = data.map({ $0.fuelRequirement() })
