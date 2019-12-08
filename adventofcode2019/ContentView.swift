@@ -48,12 +48,14 @@ struct ContentView: View {
             }) {
                Text("1")
             }
-//            Button(action: {
-//               let inputArray = InputParser.autoParse(string: self.inputText)
-//               let day2 = Day2(dataArray: inputArray)
-//            }) {
-//               Text("2")
-//            }
+            Button(action: {
+               let inputArray = InputParser.autoParse(string: self.inputText)
+               let day2 = Day2(dataArray: inputArray)
+               let value = day2.part2MultipleNounAndVerbChanges()
+               self.outputText = "\(value)"
+            }) {
+               Text("2")
+            }
          }
          
          Text("Output")

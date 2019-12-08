@@ -23,6 +23,26 @@ class Day2: DayParent {
       return part1GravityAssit()
    }
    
+   func part2MultipleNounAndVerbChanges() -> Int {
+      let valueToCheck = 19690720
+      
+      for noun in 0...99 {
+         for verb in 0...99 {
+            dataCopy = data
+            dataCopy[1] = noun
+            dataCopy[2] = verb
+            
+            let resultArray = part1GravityAssit()
+            if let firstResult = resultArray.first, firstResult == valueToCheck {
+               return 100 * noun + verb
+            }
+         }
+      }
+      
+      assertionFailure()
+      return -1
+   }
+   
    func part1GravityAssit() -> [Int] {
       var nextInput = 0
       var storeInstruction = true
