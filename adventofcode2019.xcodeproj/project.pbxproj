@@ -17,6 +17,8 @@
 		5043F85B2399C82100BFFB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5043F8592399C82100BFFB33 /* Main.storyboard */; };
 		5043F8722399CCC800BFFB33 /* InputParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8712399CCC800BFFB33 /* InputParser.swift */; };
 		5043F8742399D28300BFFB33 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8732399D28300BFFB33 /* Day1.swift */; };
+		5067007A239DD24200DB6809 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50670079239DD24200DB6809 /* Day3.swift */; };
+		5067007C239DD37900DB6809 /* Day3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067007B239DD37900DB6809 /* Day3Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5043F8682399C82100BFFB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5043F8712399CCC800BFFB33 /* InputParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParser.swift; sourceTree = "<group>"; };
 		5043F8732399D28300BFFB33 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		50670079239DD24200DB6809 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
+		5067007B239DD37900DB6809 /* Day3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				503F2471239D6D78006548E8 /* DayParent.swift */,
 				5043F8732399D28300BFFB33 /* Day1.swift */,
 				503F246F239D6814006548E8 /* Day2.swift */,
+				50670079239DD24200DB6809 /* Day3.swift */,
 				5043F8542399C82100BFFB33 /* Assets.xcassets */,
 				5043F8592399C82100BFFB33 /* Main.storyboard */,
 				5043F85C2399C82100BFFB33 /* Info.plist */,
@@ -114,6 +119,7 @@
 			children = (
 				5043F8682399C82100BFFB33 /* Info.plist */,
 				503F2473239D6FBF006548E8 /* Day2Tests.swift */,
+				5067007B239DD37900DB6809 /* Day3Tests.swift */,
 			);
 			path = adventofcode2019Tests;
 			sourceTree = "<group>";
@@ -219,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5067007A239DD24200DB6809 /* Day3.swift in Sources */,
 				5043F8742399D28300BFFB33 /* Day1.swift in Sources */,
 				503F2470239D6814006548E8 /* Day2.swift in Sources */,
 				503F2472239D6D78006548E8 /* DayParent.swift in Sources */,
@@ -232,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5067007C239DD37900DB6809 /* Day3Tests.swift in Sources */,
 				503F2474239D6FBF006548E8 /* Day2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

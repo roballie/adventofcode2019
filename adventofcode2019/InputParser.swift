@@ -24,6 +24,21 @@ class InputParser {
       return parsedArray.compactMap({ Int(String($0)) })
    }
    
+   class func parseCSVsWithNewlines(string: String) -> [[String]] {
+      guard string.contains("\n"), string.contains(",") else { return [[]] }
+      var outerArrays: [String.SubSequence] = []
+      outerArrays = string.split(separator: "\n")
+      
+      var datasArray: [[String]] = []
+      for outerArray in outerArrays {
+         let csv = outerArray.split(separator: ",")
+         let intCsv = csv.map({ String($0) })
+         datasArray += [intCsv]
+      }
+      
+      return datasArray
+   }
+   
    class func unparseToCSV(intArray: [Int]) -> String {
       var unparsedCSV = ""
       
