@@ -58,6 +58,27 @@ struct ContentView: View {
             }
          }
          
+         HStack {
+            Text("Day 3:")
+            Button(action: {
+               let inputsArray = InputParser.parseCSVsWithNewlines(string: self.inputText)
+               let day3 = Day3(datasArray: inputsArray)
+               let value = day3.part1DiscoverClosestIntersection()
+               self.outputText = String(value)
+            }) {
+               Text("1")
+            }
+//            Button(action: {
+//               let inputArray = InputParser.autoParse(string: self.inputText)
+//               let day2 = Day2(dataArray: inputArray)
+//               let value = day2.part2MultipleNounAndVerbChanges()
+//               self.outputText = "\(value)"
+//            }) {
+//               Text("2")
+//            }
+         }
+
+         
          Text("Output")
          Text(outputText)
       }
