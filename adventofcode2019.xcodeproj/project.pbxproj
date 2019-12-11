@@ -19,6 +19,8 @@
 		5043F8742399D28300BFFB33 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043F8732399D28300BFFB33 /* Day1.swift */; };
 		5067007A239DD24200DB6809 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50670079239DD24200DB6809 /* Day3.swift */; };
 		5067007C239DD37900DB6809 /* Day3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067007B239DD37900DB6809 /* Day3Tests.swift */; };
+		508630A523A0727C00B5557E /* Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508630A423A0727C00B5557E /* Day4.swift */; };
+		508630A723A0728F00B5557E /* Day4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508630A623A0728F00B5557E /* Day4Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5043F8732399D28300BFFB33 /* Day1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
 		50670079239DD24200DB6809 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
 		5067007B239DD37900DB6809 /* Day3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3Tests.swift; sourceTree = "<group>"; };
+		508630A423A0727C00B5557E /* Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4.swift; sourceTree = "<group>"; };
+		508630A623A0728F00B5557E /* Day4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				5043F8732399D28300BFFB33 /* Day1.swift */,
 				503F246F239D6814006548E8 /* Day2.swift */,
 				50670079239DD24200DB6809 /* Day3.swift */,
+				508630A423A0727C00B5557E /* Day4.swift */,
 				5043F8542399C82100BFFB33 /* Assets.xcassets */,
 				5043F8592399C82100BFFB33 /* Main.storyboard */,
 				5043F85C2399C82100BFFB33 /* Info.plist */,
@@ -120,6 +125,7 @@
 				5043F8682399C82100BFFB33 /* Info.plist */,
 				503F2473239D6FBF006548E8 /* Day2Tests.swift */,
 				5067007B239DD37900DB6809 /* Day3Tests.swift */,
+				508630A623A0728F00B5557E /* Day4Tests.swift */,
 			);
 			path = adventofcode2019Tests;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				5043F8532399C82000BFFB33 /* ContentView.swift in Sources */,
 				5043F8512399C82000BFFB33 /* AppDelegate.swift in Sources */,
 				5043F8722399CCC800BFFB33 /* InputParser.swift in Sources */,
+				508630A523A0727C00B5557E /* Day4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +248,7 @@
 			files = (
 				5067007C239DD37900DB6809 /* Day3Tests.swift in Sources */,
 				503F2474239D6FBF006548E8 /* Day2Tests.swift in Sources */,
+				508630A723A0728F00B5557E /* Day4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
