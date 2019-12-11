@@ -77,6 +77,26 @@ struct ContentView: View {
                Text("2")
             }
          }
+         
+         HStack {
+            Text("Day 4:")
+            Button(action: {
+               let inputsArray = InputParser.autoParse(string: self.inputText)
+               guard inputsArray.count == 2 else { return }
+               let lower = Int(inputsArray[0])
+               let upper = Int(inputsArray[1])
+               let day4 = Day4(lowerRange: lower, upperRange: upper)
+               let val = day4.amountInRangeForPart1()
+               self.outputText = String(val)
+            }) {
+               Text("1")
+            }
+            Button(action: {
+               
+            }) {
+               Text("2")
+            }
+         }
 
          
          Text("Output")

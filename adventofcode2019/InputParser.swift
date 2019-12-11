@@ -16,8 +16,9 @@ class InputParser {
          parsedArray = string.split(separator: "\n")
       } else if string.contains(",") {
          parsedArray = string.split(separator: ",")
-      }
-      else if let intVal = Int(string) {
+      } else if string.contains("-") {
+         parsedArray = string.split(separator: "-")
+      } else if let intVal = Int(string) {
          return [intVal]
       }
       

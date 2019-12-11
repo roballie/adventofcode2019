@@ -16,7 +16,7 @@ class Day4Tests: XCTestCase {
       let input2 = 223450
       let input3 = 123789
       
-      let day4 = Day4()
+      let day4 = Day4(lowerRange: 0, upperRange: 0)
       
       XCTAssertTrue(day4.doesAdhereToDay4_1Rule(input: input1))
       XCTAssertFalse(day4.doesAdhereToDay4_1Rule(input: input2))
