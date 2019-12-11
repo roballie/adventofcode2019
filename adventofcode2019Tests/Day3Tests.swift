@@ -22,5 +22,17 @@ class Day3Tests: XCTestCase {
       
       XCTAssertEqual(result, expected)
    }
+   
+   func test2_1() {
+      let input = "R75,D30,R83,U83,L12,D49,R71,U7,L72\nU62,R66,U55,R34,D71,R55,D58,R83"
+      let parsed = InputParser.parseCSVsWithNewlines(string: input)
+      
+      let day3 = Day3(datasArray: parsed)
+      let result = day3.part2InetersectionInLeastSteps()
+      
+      let expected = 610
+      
+      XCTAssertEqual(result, expected)
+   }
 
 }

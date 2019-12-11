@@ -34,6 +34,11 @@ class Day3 {
       return minVal
    }
    
+   func part2InetersectionInLeastSteps() -> Int {
+      
+      return 0
+   }
+   
    private func pointsArray(instructions: [String]) -> [CGPoint] {
       var visitedPoints: [CGPoint] = [.zero]
       var lastPoint = CGPoint.zero
