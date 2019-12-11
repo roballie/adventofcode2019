@@ -55,4 +55,8 @@ class Day4 {
       return true
    }
    
+   func doesAdhereToDay4_2Rule(input: Int) -> Bool {
+      return false
+   }
+   
 }
