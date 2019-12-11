@@ -35,8 +35,22 @@ class Day3 {
    }
    
    func part2InetersectionInLeastSteps() -> Int {
+      guard datasArray.count == 2 else { return 0 }
+      let instructions1 = datasArray[0]
+      let instructions2 = datasArray[1]
+      let results1 = pointsArray(instructions: instructions1)
+      let results2 = pointsArray(instructions: instructions2)
+      let intersectionArray = intersections(pointsArray1: results1, pointsArray2: results2)
       
-      return 0
+      var minMoves = Int.max
+      for intersection in intersectionArray {
+         let movements1 = movementsToGetToIntersection(pointsArray: results1, intersection: intersection)
+         let movements2 = movementsToGetToIntersection(pointsArray: results2, intersection: intersection)
+         let totalMovements = movements1 + movements2
+         minMoves = min(minMoves, totalMovements)
+      }
+      
+      return minMoves
    }
    
    private func pointsArray(instructions: [String]) -> [CGPoint] {
@@ -106,5 +120,28 @@ class Day3 {
       }
       
       return CGPoint(x: line1.a.x + u * (line1.b.x - line1.a.x), y: line1.a.y + u * (line1.b.y - line1.a.y))
+   }
+   
+   private func movementsToGetToIntersection(pointsArray: [CGPoint], intersection: CGPoint) -> Int {
+      guard intersection.x != 0 && intersection.y != 0 else { return Int.max/2 }
+      var movements: CGFloat = 0
+      for index in 1..<pointsArray.count {
+         let pt1 = pointsArray[index - 1]
+         let pt2 = pointsArray[index]
+         
+         let path = NSBezierPath()
+         path.move(to: pt1)
+         path.line(to: pt2)
+         
+         if path.contains(intersection) {
+            let extraMove = abs(intersection.x - pt1.x) + abs(intersection.y - pt1.y)
+            return Int(movements + extraMove)
+         }
+         
+         let movement = abs(pt2.x - pt1.x) + abs(pt2.y - pt1.y)//works because they dont move diagnally
+         movements += movement
+      }
+      assertionFailure()
+      return 0
    }
 }
