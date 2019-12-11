@@ -92,7 +92,13 @@ struct ContentView: View {
                Text("1")
             }
             Button(action: {
-               
+               let inputsArray = InputParser.autoParse(string: self.inputText)
+               guard inputsArray.count == 2 else { return }
+               let lower = Int(inputsArray[0])
+               let upper = Int(inputsArray[1])
+               let day4 = Day4(lowerRange: lower, upperRange: upper)
+               let val = day4.part2AnotherRule()
+               self.outputText = String(val)
             }) {
                Text("2")
             }

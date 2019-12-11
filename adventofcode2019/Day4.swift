@@ -28,6 +28,16 @@ class Day4 {
       return goodValues
    }
    
+   func part2AnotherRule() -> Int {
+      var goodValues = 0
+      for value in lowerRange...upperRange {
+         if doesAdhereToDay4_2Rule(input: value) {
+            goodValues += 1
+         }
+      }
+      return goodValues
+   }
+   
    func doesAdhereToDay4_1Rule(input: Int) -> Bool {
       let stringNumber = String(input)
       
@@ -56,7 +66,26 @@ class Day4 {
    }
    
    func doesAdhereToDay4_2Rule(input: Int) -> Bool {
-      return false
+      guard doesAdhereToDay4_1Rule(input: input) else { return false }
+      let stringNumber = String(input)
+      
+      var ruleMet = false
+      var numInRow = 0
+      var lastChar: String.Element = "x"
+      for char in stringNumber {
+         if lastChar == char {
+            numInRow += 1
+         } else if numInRow == 1 {
+            ruleMet = true
+            break
+         } else if numInRow > 1 {
+            numInRow = 0
+         }
+         
+         lastChar = char
+      }
+      
+      return ruleMet || numInRow == 1//catch last 2 digits
    }
    
 }
